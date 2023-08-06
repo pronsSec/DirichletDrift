@@ -1,5 +1,74 @@
-# DirichletDrift
-DirichletDrift is a one stop bulk file handling shop. It sifts through your file names and leverages LDA to categorize them into distinct topics. Whether you're diving into a fresh dataset or revisiting a previous one, DD provides a one-stop solution to analyze and make sense of your data.
+# DirichletDrift 🧵
+
+A robust tool for analyzing and categorizing large datasets using Latent Dirichlet Allocation (LDA).
 
 ![image](https://github.com/pronsSec/DirichletDrift/assets/93559326/e5246285-ae33-4a17-b4c6-e66ca3517b7e)
 
+
+
+
+
+
+
+
+
+
+## Introduction
+
+DirichletDrift is a one stop bulk file handling shop. It sifts through your file names and leverages LDA to categorize them into distinct topics. Whether you're diving into a fresh dataset or revisiting a previous one, DirichletDrift provides a one-stop solution to analyze and make sense of your data.
+
+## Features
+- 🗂️ Sort and gather files by type from your unsorted files. Neatly Pack into one directory.
+- 📊 Perform LDA analysis on file names.
+- 🗂️ Create a CSV flat file database for easy examination.
+- 🚀 Quick file retrieval based on topics of interest.
+- 🎨 Visualize topic distributions with an interactive HTML dashboard output.
+
+## Getting Started
+
+**Clone the Repository**
+   ```bash
+   git clone https://github.com/pronsSec/DirichletDrift.git &&
+   sudo chmod -R 777 DirichletDrift &&
+   cd DirichletDrift
+```
+
+**Run TopicTapestry**
+```
+python dirichlet_drift.py
+```
+
+
+---
+
+## Usage
+
+- **Sort and Gather Files**
+
+Use the sort option to recursively sort files by filetype from your system. 
+
+This copies them to a bulk target directory. The LDA script takes only a bulk directory as input, no subdirectories. So, this creates a clean bucket for the LDA script to run on. 
+I use this script on massive datasets, and love it. It allows me to bucket unmanageable datasets into neat buckets. Then proceed to topic model them using LDA in steps 2-3. Analyze terabytes like they are putty in your hand. 
+
+
+- **Perform LDA Analysis**
+
+Upon running runner.py, select the option to perform LDA analysis. (This is not a recursive tool, use the sorting tool to make a bucket to feed it)
+The script will guide you through the process. If you used the sorting script feed it that bucket directory you created.
+
+
+- **Query prior Results**
+
+Opt to query an existing CSV file.
+Enter the topic words of interest.
+Access the relevant files directly through the tool. Quickly open and read related files. 
+
+- **Access The Interactive HTML Topic Modelling Output Dashboard**
+
+Choose the option for this and the dashboard will open in browser. 
+
+---
+
+
+*Requirements
+All required packages are listed in requirements.txt. TopicTapestry will handle the installation for you.*
