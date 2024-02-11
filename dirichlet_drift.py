@@ -20,7 +20,7 @@ def check_requirements():
         requirements_path = os.path.join(current_directory, "requirements.txt")
         
         print("\n[INFO] Starting installation...\n")
-        subprocess.check_call(["pip", "install", "-r", requirements_path])
+        subprocess.check_call(["pip3", "install", "-r", requirements_path])
         
         print("\nInstallation completed. Please run the script again.")
         exit()
