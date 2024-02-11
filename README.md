@@ -86,4 +86,5 @@ Choose the option for this and the dashboard will open in browser.
 
 
 *Requirements
-All required packages are listed in requirements.txt. TopicTapestry will handle the installation for you.*
+All required packages are listed in requirements.txt. DirichletDrift will handle the installation for you.
+Ensure you are using python +3.9.x as the needed version of pyLDAvis is not available sub 3.9*
