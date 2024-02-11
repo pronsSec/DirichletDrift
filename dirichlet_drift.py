@@ -84,10 +84,10 @@ def main():
             sort_files()
         elif choice == "2":
             lda_script_path = os.path.join(current_directory, "lda_analysis.py")
-            os.system(f'python {lda_script_path}')
+            os.system(f'python3 {lda_script_path}')
         elif choice == "3":
             csv_script_path = os.path.join(current_directory, "csv_query.py")
-            os.system(f'python {csv_script_path}')
+            os.system(f'python3 {csv_script_path}')
         elif choice == "4":
             # Building path relative to current script's location for the lda.html file
             lda_html_path = os.path.join(current_directory, "lda.html")
